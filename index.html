@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SysFin - Sistema Financeiro em qualquer lugar!</title>
+	<link rel="stylesheet" type="text/css" href="css/LoginForm.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<img class="wave" src="img/wave.png">
+	<div class="container">
+		<!-- Lado Esquerdo -->
+		<div class="img animate-top">
+			<img src="img/bg.svg">
+		</div>
+		
+		<!-- Lado Direito  -->
+		<div class="login-content" id="flip-card">
+			<form action="index.html" class="card-login animate-left flip-card-inner" id="cardlogin" >
+			
+			<!-- Lado da Frente -->
+				<div class="flip-card-front" id="front-card">
+					<img src="img/avatar.svg">
+					<div class="title">
+						<h2 >SysFin</h2>
+						<h3>Sistema Financeiro On-line</h3>
+					</div>
+					<div class="input-div one">
+						<div class="i">
+							<i class="fas fa-user"></i>
+					   </div>
+					   <div class="div">
+							<h5>Nome de Usuário</h5>
+							<input type="text" class="input">
+					   </div>
+					</div>
+					<div class="input-div pass">
+					   <div class="i"> 
+							<i class="fas fa-lock"></i>
+					   </div>
+					   <div class="div">
+							<h5>Senha</h5>
+							<input type="password" class="input senha">
+					   </div>
+					</div>
+					<div style="margin:0.6em 0 3em 0;">
+						<label class="switch">
+							<input type="checkbox">
+							<span class="slider round"></span>
+						</label>
+						<span class="subTitle">Ficar conectado?</span>
+						<a id="esq" href="#">Esqueceu a senha?</a>
+					</div>
+					<input type="submit" class="btn" value="Entrar" id= "btnEntrar" onclick='alert("Verificar Cadastro ... em desenvolvimento...")'>
+					<h3>ou</h3>
+					<input type="button" class="btn" value="Cadastre-se" onclick="cadastrarFlip()">
+				</div> <!-- Fim do Lado da Frente -->
+				
+				<!-- Lado de tras -->
+				<div class="flip-card-back">
+					<h1 style="font-size:1.8em;">Controle suas contas de qualquer lugar!</h1>
+					
+					
+					
+					
+					
+					
+					
+					<div style="margin:10px 0;" class="input-div">
+						<div class="i">
+							<i class="fas fa-at"></i>
+					   </div>
+					   <div class="div">
+							<h5>E-mail</h5>
+							<input type="text" class="input">
+					   </div>
+					</div>
+					<div style="margin:20px 0;" class="input-div pass">
+					   <div class="i"> 
+							<i class="fas fa-lock"></i>
+					   </div>
+					   <div class="div">
+							<h5>Senha</h5>
+							<input type="password" class="input senha">
+					   </div>
+					</div>
+					<h3 style="color: #333;">repita a senha</h3>
+					<div style="margin:5px 0;" class="input-div pass">
+					   <div class="i"> 
+							<i class="fas fa-lock"></i>
+					   </div>
+					   <div class="div">
+							<h5>Senha</h5>
+							<input type="password" class="input senha">
+					   </div>
+					</div>
+					
+					
+					<div style="margin:12px 0;"><!-- social media -->
+						<p style="margin:5px 0;">Visite nossas redes :</p>
+						<div class="social-media">
+							<ul class="list-social-media">
+								<a class="link-social-media" href="#">
+									<li class="item-social-media">
+										<i class="fab fa-facebook-f"></i>
+									</li>
+								</a>
+								<a class="link-social-media" href="#">
+									<li class="item-social-media">
+										<i class="fab fa-google-plus-g"></i>
+									</li>
+								</a>
+								<a class="link-social-media" href="#">
+									<li class="item-social-media">
+										<i class="fab fa-linkedin-in"></i>
+									</li>
+								</a>
+							</ul>
+						</div>
+					</div><!-- social media -->
+					
+					<input type="submit" class="btn" value="Cadastre-se" onclick='alert("Verificar Cadastro ... em desenvolvimento...")'>
+					<input type="button" class="btn btn-metade" value="< Voltar" onclick='voltaFlip()'>
+				</div><!-- Fim do Lado de tras -->
+				
+            </form><!-- Fim do Form -->
+			
+        </div>
+    </div><!-- Fim do container -->
+    <script type="text/javascript" src="js/LoginForm.js"></script>
+</body>
+</html>
